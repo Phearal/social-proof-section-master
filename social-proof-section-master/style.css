@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Spartan', sans-serif;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+h1 {
+    font-size: 50px;
+    color: hsl(300, 43%, 22%);
+}
+h2 {
+    color: hsl(300, 43%, 22%);
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 40px;
+}
+h3  {
+    color: #fff;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main {
+    width: 1440px;
+}
+main section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+#catchphrase h1 {
+    width: 500px;
+    margin-bottom: 20px;
+}
+#catchphrase p {
+    width: 500px;
+    font-size: 15px;
+    font-weight: 500;
+    color: hsl(303, 10%, 53%);
+    line-height: 25px;
+}
+main section ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main section ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: hsl(300, 24%, 96%);
+    width: 500px;
+    height: 60px;
+    border-radius: 10px;
+}
+main section ul li div{
+    margin-left: 40px;
+}
+#lione {
+    margin-bottom: 20px;
+    transform: translateX(-100px);
+}
+#litwo {
+    margin-bottom: 20px;
+    transform: translateX(-50px);
+}
+
+/* COMMENTAIRES */
+#users {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+#users li {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    width: 380px;
+    height: 200px;
+    padding: 50px 40px;
+}
+.usernames {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.usernames img {
+    border-radius: 100%;
+}
+.usernames div {
+    margin-left: 30px;
+}
+.verif {
+    font-size: 15px;
+    color: hsl(300, 24%, 96%);
+    font-weight: 100;
+    line-height: 25px;
+}
+.usercomment {
+    line-height: 25px;
+    color: #fff;
+    font-size: 15px;
+}
+#lideux {
+    margin-top: 25px;
+}
+#litrois {
+    margin-top: 50px;
+}
+/* DECO */
+#decotop1 {
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+#decobottom1 {
+    position: absolute;
+    z-index: 0;
+    bottom: 0px;
+    right: 0px;
+    display: none;
+}
+#decotop2 {
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+#decobottom2 {
+    position: absolute;
+    z-index: 0;
+    bottom: 0px;
+    right: 0px;
+    display: none;
+}
+
+
+@media (max-width: 1440px) {
+    #decotop1, #decobottom1 {
+        display: none;
+    }
+    #decotop2, #decobottom2 {
+        display: none;
+    }
+    main {
+        width: unset;
+    }
+    main section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    #catchphrase {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    #lione {
+        margin-bottom: 20px;
+        transform: translateX(0px);
+    }
+    #litwo {
+        margin-bottom: 20px;
+        transform: translateX(0px);
+    }
+    main section ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: 60px;
+        border-radius: 10px;
+        padding: 10px 0px;
+    }
+    main section ul li div{
+        margin: 0px 0px 10px 0px;
+    }
+    h2 {
+        margin-left: 0px;
+    }
+    #users {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+    #lideux {
+        margin-top: 0px;
+    }
+    #litrois {
+        margin-top: 0px;
+    }
+    #users li {
+        margin: 20px 0px;
+        width: 300px;
+        height: unset;
+    }
+    #catchphrase h1 {
+        width: unset;
+    }
+    #catchphrase p {
+        width: unset;
+    }
+}
