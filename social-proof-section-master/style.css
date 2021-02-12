@@ -225,3 +225,12 @@ main section ul li div{
         width: unset;
     }
 }
+@media (max-width: 376px) {
+    h1, #catchphrase p {
+        margin: 0px 10px;
+    }
+    #users li {
+        width: 70vw;
+    }
+    
+}
